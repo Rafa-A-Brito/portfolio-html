@@ -37,8 +37,4 @@ O design foi desenvolvido com foco em responsividade e experiência do usuário,
    ```sh
    npm start  # ou outro comando específico
    ```
-5. Acesse no navegador: `http://localhost:3000` (ou conforme indicado no terminal)
-
-## 📜 Licença
-
-Este projeto está licenciado sob a **MIT License** - sinta-se livre para utilizar e modificar conforme necessário.
+5. Acesse no navegador: `bit.ly/portfolioRaf` (ou conforme indicado no terminal)
