@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio - Rafael Brito</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      <link rel="icon" type="image/png" href="./images/logo/icon-curriculo.png">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <nav>
+      <div class="nav-container">
+        <div class="logo">
+          <span>Rafael</span>
+        </div>
+        <div class="links">
+          <a href="home.html" class="active"><i class="fa-solid fa-house"></i></a>
+          <a href="experience.html" class="">Experiências</a>
+          <a href="achievements.html" class="">Formação/Certificados</a>
+          <a href="skills.html" class="">Competências</a>
+          <a href="contact.html" class="">Contato</a>
+        </div>
+      </div>
+      <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+    </div>
+    <div class="dropdown">
+          <div class="links">
+            <a href="home.html" class="active"><i class="fa-solid fa-house"></i></a>
+            <a href="experience.html" class="">Experiências</a>
+            <a href="achievements.html" class="">Formação/Certificados</a>
+            <a href="skills.html" class="">Competências</a>
+            <a href="contact.html" class="">Contato</a>
+            <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+          </div>
+        </div>
+      </nav>
+      
+    <section class="forms" id="forms">
+      <div class="interface">
+        <h2 class="title" data-aos="fade-up" data-aos-duration="1500"> <span>CONTATE </span>
+          <span class="rest"> -ME.</span></h2>
+
+              <form action="https://api.web3forms.com/submit" method="POST" onsubmit="setTimeout(() => this.reset(), 600)">
+              
+                <!--<input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">-->
+                
+                <input type="hidden" name="access_key" value="e823b001-a2f9-486c-9d49-edf668d52dcb">
+
+                <input type="text" name="Nome:" id="" placeholder="Seu nome Completo:" required>
+                <input type="text" name="E-mail:" id="" placeholder="Seu email:" required>
+                <input type="text" name="Telefone:" id="phone" placeholder="Seu celular:">
+                <textarea name="message" id="" placeholder="Sua mensagem" required></textarea>
+                <div class="send-button" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400" ><input type="submit" value="Enviar"></div>
+              </form>
+        </div> <!--Interface-->
+    </section> <!--forms-->
+    <footer>
+      <div class="line-footer">
+        <div class="flex">
+          <p><i class="fa-solid fa-envelope"></i> <a class="email"href="mailto:rafabrito1903@gmail.com">Contato: rafabrito1903@gmail.com</a></p>
+          <div class="icons_social-media-footer">
+            <a
+            href="https://www.linkedin.com/in/rafael-brito-3a3819308/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/Rafa-A-Brito" target="_blank"
+              ><i class="fa-brands fa-github"></i
+                ></a>
+                <a
+                href="https://stackoverflow.com/users/29687323/rafael-brito"
+                target="_blank"
+                ><i class="fa-brands fa-stack-overflow"></i
+                  ></a>
+                </div> 
+              </div>
+      </div>
+      <div class="text">
+        <span
+          >Desenvolvido por
+          <a href="#">Rafael Brito</a>
+          | &#169; 2025 Todos os Direitos Reservados</span
+          >
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({offset:0});
+  </script>
+  </html> 
