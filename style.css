@@ -755,8 +755,9 @@ footer .line-footer .icons_social-media {
     height: 350px;
     width: 350px;
   }
-  
-  .about-me .carousel{
+ 
+  .about-me .carousel {
+    height: 350px;
     width:350px;
     overflow: hidden;
   }
