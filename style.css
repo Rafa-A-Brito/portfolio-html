@@ -261,7 +261,7 @@ section .home{
 
 .content button {
   width: 50%;
-  height: 6;
+  height: 10;
   margin: 30px;
   background-color: #69dbd0;
   color: white;
@@ -751,22 +751,27 @@ footer .line-footer .icons_social-media {
 /* Ajuste para telas menores */
 
 @media (max-width: 900px) {
-  .about-me .left img {
-    height: 350px;
-    width: 350px;
-  }
- 
   .about-me .carousel {
-    height: 350px;
-    width:350px;
+    width: 400px;
+    height: 400px; 
     overflow: hidden;
+    position: relative; /* Mantém o contexto correto */
   }
-
+  
+  .container-image {
+    display: flex;
+    width: 400px; 
+  }
+  
   .container-image img {
-    height: 350px;
-    width: 350px;
+    width: 400px;
+    height: 400px;
+    object-fit: cover; /* Evita deformação e mantém as imagens bem ajustadas */
+    border-radius: 12px;
   }
+  
 }
+
 @keyframes slide {
   0%, 33.33% { transform: translateX(0); }
   33.34%, 66.66% { transform: translateX(-400px); }
