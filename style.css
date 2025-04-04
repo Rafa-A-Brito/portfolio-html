@@ -260,7 +260,7 @@ section .home{
 }
 
 .content button {
-  width: 50%;
+  width: 80%;
   height: 10;
   margin: 30px;
   background-color: #69dbd0;
@@ -523,6 +523,13 @@ section .topic {
   .services .boxes .box{
     margin: 20px 0;
     width:calc(100% / 2 -20px)
+  }
+
+  .separator-horizontal {
+    height: 3px;
+    background-color: #69dbd0;
+    width: 100%;
+    min-width: 20vh;
   }
 }
 
@@ -843,6 +850,29 @@ footer .line-footer .icons_social-media {
   .services .boxes .box{
     margin: 20px 0;
     width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+
+  .about-me .carousel {
+    width: 100%; /* Adapta ao tamanho da tela */
+    height: auto; /* Ajusta a altura proporcionalmente */
+    overflow: hidden;
+    position: relative;
+  }
+
+  .container-image {
+    display: flex;
+    width: 100%; /* Mantém o tamanho relativo */
+    justify-content: center; /* Centraliza a imagem */
+  }
+
+  .container-image img {
+    width: 100%; /* Faz a imagem ocupar toda a largura disponível */
+    height: auto; /* Mantém a proporção original */
+    object-fit: cover; 
+    border-radius:12px ;
   }
 }
 
