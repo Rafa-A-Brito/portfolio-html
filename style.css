@@ -1,5 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins%3Awght%40100%3B200%3B300%3B400%3B500%3B600&display=swap%27%29%3B");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  background-color: black;
+  overflow-x: hidden;
+}
+
 .certificates {
   display: flex;
   align-items: center; 
@@ -42,22 +58,6 @@ ul {
 ul li {
   text-align: left;
   margin-left: 50px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  font-family: "Poppins", sans-serif;
-  scroll-behavior: smooth;
-}
-
-body {
-  width: 100%;
-  height: auto;
-  background-color: black;
-  overflow-x: hidden;
 }
 
 /*ScrollBar CSS*/
@@ -529,10 +529,16 @@ section .topic {
     height: 3px;
     background-color: #69dbd0;
     width: 100%;
-    min-width: 20vh;
+    min-width: 20vh;  
   }
+  .detail-skills .separator-vertical {
+    all:unset;
+    height: 3px; 
+    background-color: #69dbd0; 
+    width: 100%; 
+    margin: 0 auto; 
 }
-
+}
 /*Form style*/
 
 section .forms {
@@ -776,9 +782,23 @@ footer .line-footer .icons_social-media {
     object-fit: cover; /* Evita deformação e mantém as imagens bem ajustadas */
     border-radius: 12px;
   }
+
+  .separator-horizontal {
+    height: 3px;
+    background-color: #69dbd0;
+    width: 100%;
+    min-width: 20vh;
+  }
+
+  .detail-skills .separator-vertical {
+    all:unset;
+    height: 3px; 
+    background-color: #69dbd0; 
+    width: 100%; 
+    margin: 0 auto; 
   
 }
-
+}
 @keyframes slide {
   0%, 33.33% { transform: translateX(0); }
   33.34%, 66.66% { transform: translateX(-400px); }
@@ -851,6 +871,21 @@ footer .line-footer .icons_social-media {
     margin: 20px 0;
     width: 100%;
   }
+
+  .separator-horizontal {
+    height: 3px;
+    background-color: #69dbd0;
+    width: 100%;
+    min-width: 20vh;
+  }
+
+  .detail-skills .separator-vertical {
+    all:unset;
+    height: 3px; 
+    background-color: #69dbd0; 
+    width: 100%; 
+    margin: 0 auto; 
+}
 }
 
 @media (max-width: 320px) {
@@ -874,6 +909,14 @@ footer .line-footer .icons_social-media {
     object-fit: cover; 
     border-radius:12px ;
   }
+
+  .separator-horizontal {
+    height: 3px;
+    background-color: #69dbd0;
+    width: 100%;
+    max-width: 20vh;
+  }
+
 }
 
 @media (max-width: 500px) {
@@ -911,6 +954,5 @@ footer .line-footer .icons_social-media {
   font-weight: 400;
 }
 .achievements .content p span {
-color: #89fff3;
-  text-shadow: 0 0 10px #89fff3;
-}
+  color: #89fff3;
+  text-shadow: 0 0 10px #89fff3;}
