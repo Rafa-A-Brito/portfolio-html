@@ -525,12 +525,6 @@ section .topic {
     width:calc(100% / 2 -20px)
   }
 
-  .separator-horizontal {
-    height: 3px;
-    background-color: #69dbd0;
-    width: 100%;
-    min-width: 20vh;  
-  }
   .detail-skills .separator-vertical {
     all:unset;
     height: 3px; 
@@ -760,9 +754,6 @@ footer .line-footer .icons_social-media {
 
 /*More responsive config*/
 
-
-/* Ajuste para telas menores */
-
 @media (max-width: 900px) {
   .about-me .carousel {
     width: 400px;
@@ -857,6 +848,7 @@ footer .line-footer .icons_social-media {
     width: 100%; 
     margin: 0 auto; 
   }
+
   .detail-skills .txt {
     width: 100%;
     margin-bottom: 50px;
@@ -888,38 +880,8 @@ footer .line-footer .icons_social-media {
 }
 }
 
-@media (max-width: 320px) {
-
-  .about-me .carousel {
-    width: 100%; /* Adapta ao tamanho da tela */
-    height: auto; /* Ajusta a altura proporcionalmente */
-    overflow: hidden;
-    position: relative;
-  }
-
-  .container-image {
-    display: flex;
-    width: 100%; /* Mantém o tamanho relativo */
-    justify-content: center; /* Centraliza a imagem */
-  }
-
-  .container-image img {
-    width: 100%; /* Faz a imagem ocupar toda a largura disponível */
-    height: auto; /* Mantém a proporção original */
-    object-fit: cover; 
-    border-radius:12px ;
-  }
-
-  .separator-horizontal {
-    height: 3px;
-    background-color: #69dbd0;
-    width: 100%;
-    max-width: 20vh;
-  }
-
-}
-
 @media (max-width: 500px) {
+  
   home .image_home {
     width: 50%;
     height: 60%;
