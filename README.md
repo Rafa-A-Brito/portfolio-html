@@ -29,12 +29,9 @@ O design foi desenvolvido com foco em responsividade e experiência do usuário,
    ```sh
    cd portfolio-html
    ```
-3. Caso utilize um framework ou pré-processador, instale as dependências:
+   
+3. Acesse o arquivo principal:
    ```sh
-   npm install  # ou yarn install
-   ```
-4. Inicie o servidor local:
-   ```sh
-   npm start  # ou outro comando específico
-   ```
-5. Acesse no navegador: `bit.ly/portfolioRaf` (ou conforme indicado no terminal)
+   cd portfolio-html/index.html
+   ```   
+OU Acesse no navegador: `bit.ly/portfolioRaf`
