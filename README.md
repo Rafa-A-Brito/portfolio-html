@@ -28,5 +28,10 @@ O design foi desenvolvido com foco em responsividade e experiência do usuário,
 2. Acesse a pasta do projeto:
    ```sh
    cd portfolio-html
+   ```
+   
+3. Acesse o arquivo principal:
+   ```sh
+   cd portfolio-html/index.html
    ```   
-3. Acesse no navegador: `bit.ly/portfolioRaf`
+OU Acesse no navegador: `bit.ly/portfolioRaf`
