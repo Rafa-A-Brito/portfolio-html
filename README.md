@@ -10,7 +10,11 @@ Bem-vindo ao meu portfólio! Este repositório contém o algoritmo do meu websit
 
 ## 🤖 Stack
 
-[![My Skills](https://skillicons.dev/icons?i=html,css,js&theme=light)](https://skillicons.dev)
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=html,css,js" />
+  </a>
+</p>
 
 ---
 
