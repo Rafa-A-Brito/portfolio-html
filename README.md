@@ -34,10 +34,11 @@ O design foi desenvolvido com foco em responsividade e experiência do usuário,
    cd portfolio-html
    ```
 3. Acesse o arquivo principal:
+
    ```sh
    start index.html
    ```
-   OU
-   `// Clique em F5 no teclado ➤ Main
-`
+
+   `// Clique em F5 no teclado ➤ Main`
+
    Acesse no navegador: `bit.ly/portfolioRaf`
