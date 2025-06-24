@@ -12,6 +12,8 @@ Bem-vindo ao meu portfólio! Este repositório contém o algoritmo do meu websit
 
 [![My Skills](https://skillicons.dev/icons?i=html,css,js&theme=light)](https://skillicons.dev)
 
+---
+
 ## 📌 Funcionalidades
 
 - 🌎 Página inicial com introdução pessoal
