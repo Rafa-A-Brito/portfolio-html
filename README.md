@@ -1,12 +1,16 @@
 # Meu Portfólio
 
-Bem-vindo ao meu portfólio! Este repositório contém o código-fonte do meu website pessoal, em que apresento meus projetos, habilidades e experiências.
+Bem-vindo ao meu portfólio! Este repositório contém o algoritmo do meu website, em que apresento meus projetos, habilidades e experiências.
 
 ## 🚀 Tecnologias Utilizadas
 
 - **HTML5**
 - **CSS3**
 - **JavaScript**
+
+## 🤖 Stack
+
+[![My Skills](https://skillicons.dev/icons?i=html,css,js&theme=light)](https://skillicons.dev)
 
 ## 📌 Funcionalidades
 
@@ -29,13 +33,11 @@ O design foi desenvolvido com foco em responsividade e experiência do usuário,
    ```sh
    cd portfolio-html
    ```
-   
 3. Acesse o arquivo principal:
    ```sh
    start index.html
    ```
    OU
-   ```bash
-   // Clique em F5 no teclado ➤ Main
-   ```
-OU Acesse no navegador: `bit.ly/portfolioRaf`
+   `// Clique em F5 no teclado ➤ Main
+`
+   Acesse no navegador: `bit.ly/portfolioRaf`
