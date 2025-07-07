@@ -1,31 +1,30 @@
 // Carousel Images
 const imgs = document.getElementById("img");
-const img = document.querySelectorAll("#img img")
-
+const img = document.querySelectorAll("#img img");
 let idx = 0;
 
-function carousel(){
-    idx++;
+function carousel() {
+  idx++;
+  if (idx > img.length - 1) {
+    idx = 0;
+  }
 
-    if (idx > img.length - 1){
-      idx = 0;
-    }
-
-    imgs.style.transform = `translateX(${- idx * 400}px)`;
-
+  const carouselWidth = imgs.parentElement.offsetWidth;
+  imgs.style.transform = `translateX(${-idx * carouselWidth}px)`;
 }
 
+// Start the carousel
 setInterval(carousel, 5500);
 
 // Responsive actions
 
-function hamburg(){
-  const navbar = document.querySelector(".dropdown")
-  navbar.style.transform  = "translateY(0px)"
+function hamburg() {
+  const navbar = document.querySelector(".dropdown");
+  navbar.style.transform = "translateY(0px)";
 }
-function cancel(){
-  const navbar = document.querySelector(".dropdown")
-  navbar.style.transform  = "translateY(-500px)"
+function cancel() {
+  const navbar = document.querySelector(".dropdown");
+  navbar.style.transform = "translateY(-500px)";
 }
 
 // Forms Contact

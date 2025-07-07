@@ -13,7 +13,7 @@ body {
   width: 100%;
   height: auto;
   background-color: black;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 .certificates {
@@ -25,6 +25,7 @@ body {
   margin: 0;
   text-align: justify;
   color: white;
+  flex-wrap: wrap;
 }
 
 section p {
@@ -89,6 +90,8 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  max-width: 100vw;
+  padding: 0 min(20px, 2vw);
 }
 
 .nav-container .links {
@@ -99,7 +102,7 @@ nav {
   position: relative;
   font-size: 1.2rem;
   color: white;
-  margin: 0 20px;
+  margin: 0 min(20px, 2vw);
   text-decoration: none;
   font-weight: 550;
   transition: 0.3s linear;
@@ -172,25 +175,36 @@ nav {
 section {
   width: 100%;
   min-height: 90vh;
+  max-width: 100vw;
 }
 
 section .home {
   display: flex;
   justify-content: space-between;
-  padding-left: 100px;
+  padding-left: min(100px, 5vw);
+  padding-right: min(20px, 2vw);
   align-items: center;
+  max-width: 100vw;
 }
 
 .home .image_home {
-  width: 500px;
-  height: 78vh;
-  border-radius: 100%;
+  width: min(500px, 80vw);
+  height: min(500px, 80vw);
+  max-width: 500px;
+  max-height: 500px;
+  border-radius: 50%;
   overflow: hidden;
   box-shadow: 0 0 50px #69dbd0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .home .image_home img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .home .image_home:hover {
@@ -211,7 +225,8 @@ section .home {
 
 .home .content {
   color: white;
-  width: 40%;
+  width: min(40%, 90vw);
+  max-width: 100%;
 }
 
 .content h1 {
@@ -248,7 +263,7 @@ section .home {
   border: 0.2rem solid #69dbd0;
   border-radius: 50%;
   color: #69dbd0;
-  margin: 5px 15px;
+  margin: 5px min(15px, 2vw);
   font-size: 1.5rem;
   transition: 0.2s linear;
 }
@@ -286,15 +301,16 @@ section .home {
 }
 
 .btn button {
-  cursor: pointer; /* Muda o cursor ao passar o mouse */
+  cursor: pointer;
 }
 
 /*About me Styling*/
 
 section .content {
-  width: 80%;
+  width: min(80%, 95vw);
   margin: 0px auto;
   font-family: "Poppins", sans-serif;
+  max-width: 100%;
 }
 
 .about-me .details {
@@ -340,22 +356,27 @@ section .title span::after {
 }
 
 .about-me .carousel {
-  width: 400px;
+  width: 100%;
+  max-width: min(400px, 90vw);
+  aspect-ratio: 1;
   overflow: hidden;
+  margin: 0 auto;
+  border-radius: 12px;
 }
 
 .container-image {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  transform: translateX(0);
-  width: 400px;
+  width: 300%;
+  height: 100%;
 }
 
 .about-me .left img {
+  width: 33.333%;
   height: 100%;
-  width: 100%;
   object-fit: cover;
-  border-radius: 12px;
+  object-position: center;
+  flex-shrink: 0;
 }
 
 .details .right {
@@ -443,9 +464,10 @@ section .topic {
 /* Home page*/
 
 .minimal_text {
-  font-size: 34px;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
   font-weight: 600;
-  min-width: 280px;
+  min-width: min(280px, 90vw);
+  overflow: hidden;
 }
 
 .minimal_text span {
@@ -755,57 +777,6 @@ footer .line-footer .icons_social-media {
   }
 }
 
-/*More responsive config*/
-
-@media (max-width: 900px) {
-  .about-me .carousel {
-    width: 400px;
-    height: 400px;
-    overflow: hidden;
-    position: relative; /* Mantém o contexto correto */
-  }
-
-  .container-image {
-    display: flex;
-    width: 400px;
-  }
-
-  .container-image img {
-    width: 400px;
-    height: 400px;
-    object-fit: cover; /* Evita deformação e mantém as imagens bem ajustadas */
-    border-radius: 12px;
-  }
-
-  .separator-horizontal {
-    height: 3px;
-    background-color: #69dbd0;
-    width: 100%;
-    min-width: 20vh;
-  }
-
-  .detail-skills .separator-vertical {
-    all: unset;
-    height: 3px;
-    background-color: #69dbd0;
-    width: 100%;
-    margin: 0 auto;
-  }
-}
-@keyframes slide {
-  0%,
-  33.33% {
-    transform: translateX(0);
-  }
-  33.34%,
-  66.66% {
-    transform: translateX(-400px);
-  }
-  66.67%,
-  100% {
-    transform: translateX(-800px);
-  }
-}
 @media (max-width: 968px) {
   nav .logo {
     position: absolute;
@@ -814,11 +785,19 @@ footer .line-footer .icons_social-media {
     font-size: 1.5rem;
   }
 
+  .nav-container {
+    padding: 0 15px;
+  }
+
   section .home {
-    padding-left: 0px;
+    padding-left: min(20px, 3vw);
+    padding-right: min(20px, 3vw);
     display: flex;
     flex-direction: column;
+    gap: 20px;
+    max-width: 100vw;
   }
+
   .nav-container .links {
     display: none;
   }
@@ -830,8 +809,10 @@ footer .line-footer .icons_social-media {
   }
 
   .home .content {
-    margin-top: 20px;
-    width: 80%;
+    width: min(90%, 100vw);
+    max-width: 100%;
+    padding: 0 10px;
+    order: 2;
   }
 
   .icons_social-media i {
@@ -840,10 +821,17 @@ footer .line-footer .icons_social-media {
     font-size: 1.5rem;
   }
 
+  .icons_social-media {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+  }
   .home .image_home {
-    z-index: -1;
-    width: 75%;
-    height: 100%;
+    width: min(300px, 70vw);
+    height: min(300px, 70vw);
+    order: 1;
+    margin: 20px auto;
   }
 
   .skills .detail-skills {
@@ -877,10 +865,9 @@ footer .line-footer .icons_social-media {
   }
 
   .separator-horizontal {
-    height: 3px;
-    background-color: #69dbd0;
+    min-width: 100%;
     width: 100%;
-    min-width: 20vh;
+    max-width: 100%;
   }
 
   .detail-skills .separator-vertical {
@@ -893,18 +880,53 @@ footer .line-footer .icons_social-media {
 }
 
 @media (max-width: 500px) {
-  home .image_home {
-    width: 50%;
-    height: 60%;
-    margin-bottom: 0px;
+  .home .image_home {
+    width: min(250px, 60vw);
+    height: min(250px, 60vw);
   }
+
   .home .content {
-    width: 80%;
+    width: 95%;
   }
 
   .detail-skills .boxes .percentual {
     font-size: 50px;
     color: #69dbd0;
+  }
+
+  .about-me .carousel {
+    max-width: min(280px, 85vw);
+  }
+  .separator-horizontal {
+    min-width: 95vw;
+    width: 95vw;
+    max-width: 95vw;
+  }
+}
+
+@media (max-width: 360px) {
+  .home .image_home {
+    width: min(200px, 55vw);
+    height: min(200px, 55vw);
+  }
+
+  .about-me .carousel {
+    max-width: min(250px, 80vw);
+  }
+  .separator-horizontal {
+    min-width: 100%;
+    width: 100%;
+    max-width: 100vw;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .home .content {
+    width: 98vw;
+    padding: 0 2px;
+  }
+
+  .nav-container {
+    padding: 0 10px;
   }
 }
 
@@ -919,7 +941,8 @@ footer .line-footer .icons_social-media {
   height: 3px;
   background-color: #69dbd0;
   width: 100%;
-  min-width: 60vh;
+  min-width: min(30vh, 100vw);
+  max-width: 100vw;
 }
 
 .skills .content p span {
@@ -929,4 +952,11 @@ footer .line-footer .icons_social-media {
 .achievements .content p span {
   color: #89fff3;
   text-shadow: 0 0 10px #89fff3;
+}
+
+.about-me,
+.skills,
+footer {
+  max-width: 100vw;
+  overflow-x: hidden;
 }
