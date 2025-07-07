@@ -22,8 +22,9 @@ body {
 }
 
 .certificates p {
+  display: flex;
   margin: 0;
-  text-align: justify;
+  text-align: left;
   color: white;
   flex-wrap: wrap;
 }
@@ -31,6 +32,10 @@ body {
 section p {
   text-align: justify;
   color: white;
+}
+
+.certificates-details .certificates p {
+  padding-right: 15px;
 }
 
 .certificates-details .certificate-anchor img {
